@@ -45,19 +45,22 @@ nav ul li a:hover {
     cursor: pointer;
     position: absolute;
     top: 15px;
-    left: 20px; /* Fixed positioning to the left */
-    flex-direction: column;
-    justify-content: space-between;
-    height: 25px;
+    left: 20px; /* Aligns to the left */
     width: 30px;
+    height: 30px;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .menu-icon .bar {
-    height: 4px;
+    height: 3px;
     width: 100%;
     background-color: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease;
 }
 
+/* Adjusting visibility of the menu */
 #nav-links {
     transition: max-height 0.3s ease-out;
     max-height: none;
@@ -140,7 +143,7 @@ a:hover {
         position: absolute;
         top: 100%;
         width: 100%;
-        left: 0; /* Aligns the menu to the left */
+        left: 0;
         z-index: 10;
     }
 
@@ -149,7 +152,7 @@ a:hover {
         margin: 10px 0;
     }
 
-    /* Burger Menu Icon Visibility */
+    /* Show burger menu icon */
     .menu-icon {
         display: flex;
     }
@@ -164,7 +167,7 @@ a:hover {
     #nav-links.open {
         display: flex;
         flex-direction: column;
-        max-height: 300px; /* Adjust as needed */
+        max-height: 300px;
         transition: max-height 0.5s ease;
     }
 
