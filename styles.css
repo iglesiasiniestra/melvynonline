@@ -7,7 +7,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
 }
 
@@ -36,23 +35,36 @@ body {
     width: 25px;
     height: 3px;
     background-color: white;
-    margin: 5px;
+    margin: 4px;
     transition: all 0.3s ease;
 }
 
+/* Hide the navigation links by default */
 .nav-links {
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.nav-links.open {
     display: flex;
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin: 10px 0;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -74,25 +86,28 @@ body {
 }
 
 /* Section Styles */
-.about-section, .experience-section, .skills-section, .education-section, .contact-section {
+section {
     padding: 2rem;
-    background-color: white;
     margin: 2rem 0;
-    border-radius: 8px;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-}
-
+/* Responsive Styles */
 @media (min-width: 768px) {
     .hamburger {
         display: none;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+    .nav-links li {
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }
