@@ -111,15 +111,4 @@ nav ul li a:hover {
 }
 
 .experience-item p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-/* Education Section */
-.education-item {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.education-item h3 {
-    font-size: 1.6em
+    font-size: 1.1
