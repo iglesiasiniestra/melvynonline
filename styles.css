@@ -45,7 +45,7 @@ nav ul li a:hover {
     cursor: pointer;
     position: absolute;
     top: 15px;
-    right: 20px;
+    left: 20px; /* Fixed positioning to the left */
     flex-direction: column;
     justify-content: space-between;
     height: 25px;
@@ -78,6 +78,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Skills and About section layouts */
 .about-content, .experience-item, .education-item {
     margin: 20px 0;
     text-align: left;
@@ -139,7 +140,8 @@ a:hover {
         position: absolute;
         top: 100%;
         width: 100%;
-        left: 0;
+        left: 0; /* Aligns the menu to the left */
+        z-index: 10;
     }
 
     nav ul li {
@@ -147,15 +149,50 @@ a:hover {
         margin: 10px 0;
     }
 
+    /* Burger Menu Icon Visibility */
     .menu-icon {
         display: flex;
     }
 
+    /* Hidden by default and expands when open */
     #nav-links {
         max-height: 0;
         overflow: hidden;
     }
 
+    /* Expanding menu when the "open" class is toggled */
     #nav-links.open {
         display: flex;
-        max-height: 300
+        flex-direction: column;
+        max-height: 300px; /* Adjust as needed */
+        transition: max-height 0.5s ease;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    .profile-picture {
+        width: 120px;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
