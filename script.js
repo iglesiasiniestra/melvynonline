@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('.section');
     const menuIcon = document.getElementById('menu-icon');
     const navLinks = document.getElementById('nav-links');
+
+    // Toggle visibility of nav links for burger menu
+    menuIcon.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+    });
+});
 
     // Toggle visibility of nav links for burger menu
     menuIcon.addEventListener('click', function() {
