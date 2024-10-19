@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +15,13 @@ body {
 nav {
     background-color: #333;
     padding: 1em 0;
-    text-align: center;
+    position: relative;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -37,6 +39,30 @@ nav ul li a:hover {
     color: #ff6b6b;
 }
 
+/* Burger menu styles */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 30px;
+}
+
+.menu-icon .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+}
+
+#nav-links {
+    transition: max-height 0.3s ease-out;
+    max-height: none;
+}
+
 .section {
     padding: 100px 0;
     text-align: center;
@@ -52,38 +78,26 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.about-content, .experience-item, .education-item {
+    margin: 20px 0;
+    text-align: left;
 }
 
 .profile-picture {
     border-radius: 50%;
-    width: 200px;
+    width: 150px;
+    float: left;
     margin-right: 20px;
 }
 
-.about-content p {
-    max-width: 600px;
-    text-align: left;
-}
-
-.projects-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.skills-list {
+    list-style-type: none;
     margin-top: 20px;
 }
 
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+.skills-list li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .contact-info {
@@ -118,58 +132,30 @@ a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+    }
+
     nav ul li {
         display: block;
         margin: 10px 0;
     }
 
-    .about-content {
-        flex-direction: column;
-        text-align: center;
+    .menu-icon {
+        display: flex;
     }
 
-    .profile-picture {
-        margin-right: 0;
-        margin-bottom: 20px;
+    #nav-links {
+        max-height: 0;
+        overflow: hidden;
     }
 
-    .projects-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .section-title {
-        font-size: 2em;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 0.9em;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    .section-title {
-        font-size: 1.8em;
-    }
-
-    .profile-picture {
-        width: 150px;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    .project-card {
-        padding: 15px;
-    }
-}
+    #nav-links.open {
+        display: flex;
+        max-height: 300
