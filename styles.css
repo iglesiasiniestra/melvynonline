@@ -1,4 +1,3 @@
-/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,196 +5,89 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
     background-color: #f4f4f4;
 }
 
-nav {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
-    padding: 1em 0;
-    position: relative;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
-    padding: 0;
-    text-align: center;
+    display: flex;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    color: #ff6b6b;
-}
-
-/* Burger menu styles */
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    left: 20px; /* Aligns to the left */
-    width: 30px;
-    height: 30px;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.menu-icon .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 2px;
-    transition: 0.3s ease;
-}
-
-/* Adjusting visibility of the menu */
-#nav-links {
-    transition: max-height 0.3s ease-out;
-    max-height: none;
-}
-
-.section {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Skills and About section layouts */
-.about-content, .experience-item, .education-item {
-    margin: 20px 0;
-    text-align: left;
-}
-
-.profile-picture {
-    border-radius: 50%;
-    width: 150px;
-    float: left;
+.nav-links li {
     margin-right: 20px;
 }
 
-.skills-list {
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-.skills-list li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.contact-info {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.contact-info li {
-    font-size: 1.2em;
-}
-
-a {
-    color: #ff6b6b;
+.nav-links a {
+    color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+.nav-links a:hover {
+    color: #f4b400;
 }
 
-/* Scroll animations */
-.section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
-/* Responsive Styles */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #008cba;
+    color: white;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.about-section, .experience-section, .skills-section, .contact-section {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
-    nav ul {
+    .nav-links {
         display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        left: 0;
-        z-index: 10;
     }
-
-    nav ul li {
+    .hamburger {
         display: block;
-        margin: 10px 0;
-    }
-
-    /* Show burger menu icon */
-    .menu-icon {
-        display: flex;
-    }
-
-    /* Hidden by default and expands when open */
-    #nav-links {
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    /* Expanding menu when the "open" class is toggled */
-    #nav-links.open {
-        display: flex;
-        flex-direction: column;
-        max-height: 300px;
-        transition: max-height 0.5s ease;
-    }
-
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-picture {
-        margin-right: 0;
-        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        font-size: 0.9em;
-    }
-
-    .profile-picture {
-        width: 120px;
-    }
-
-    .section-title {
-        font-size: 1.8em;
-    }
-
-    .container {
-        width: 95%;
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
     }
 }
