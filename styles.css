@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
 }
 
 .section {
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -28,54 +28,57 @@ body {
     color: #333;
 }
 
-/* Navigation Styles */
-nav {
+/* Navbar Styles */
+.navbar {
     background-color: #333;
-    padding: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
+    display: flex;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 1em;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
+    font-size: 1.1em;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ff6b6b;
 }
 
-/* Burger Menu Styles */
+/* Hamburger menu styles */
 .menu-icon {
     display: none;
     cursor: pointer;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    width: 25px; /* Reduced width */
-    height: 20px; /* Reduced height */
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
 }
 
 .menu-icon .bar {
-    height: 2px; /* Thinner lines */
-    width: 100%; /* Full width for the bar */
-    background-color: white;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
     border-radius: 2px;
-    transition: 0.3s ease;
 }
 
 /* About Section */
@@ -89,26 +92,28 @@ nav ul li a:hover {
 
 .about-content img {
     border-radius: 50%;
-    width: 200px;
-    margin-right: 20px;
+    width: 180px;
+    margin-right: 30px;
 }
 
 .about-content p {
     max-width: 600px;
-    font-size: 1.1em;
-    line-height: 1.6;
+    font-size: 1.2em;
+    line-height: 1.8;
 }
 
-/* Experience Section */
-.experience-item {
-    margin-bottom: 30px;
+/* Experience, Education, Skills */
+.experience-item, .education-item {
     text-align: left;
+    margin-bottom: 30px;
 }
 
-.experience-item h3 {
-    font-size: 1.6em;
-    color: #333;
+.experience-item h3, .education-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.experience-item p {
-    font-size: 1.1
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
