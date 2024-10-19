@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,6 +22,22 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 .nav-links {
@@ -41,20 +59,6 @@ body {
     color: #f4b400;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
 .hero {
     text-align: center;
     padding: 2rem;
@@ -69,7 +73,8 @@ body {
     margin-bottom: 1rem;
 }
 
-.about-section, .experience-section, .skills-section, .contact-section {
+/* Section Styles */
+.about-section, .experience-section, .skills-section, .education-section, .contact-section {
     padding: 2rem;
     background-color: white;
     margin: 2rem 0;
