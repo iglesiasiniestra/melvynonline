@@ -1,3 +1,4 @@
+// Wait for the DOM to load before running the script
 document.addEventListener('DOMContentLoaded', function() {
     // Get the elements for the menu icon and the navigation links
     const menuIcon = document.getElementById('menu-icon');
