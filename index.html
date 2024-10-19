@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-    <link rel="manifest" href="images/icons/site.webmanifest">
-    <title>Melvyn Montalvo | Portfolio</title>
+    <title>Melvyn Montalvo | Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -25,27 +28,87 @@
         <div class="container">
             <h1 class="section-title">About Me</h1>
             <div class="about-content">
-                <img src="images/portrait.jpeg" alt="Your Photo" class="profile-picture">
-                <p>Hi, I'm Melvyn Montalvo, a passionate developer with a love for creating innovative web applications. I specialize in [your skills] and enjoy working on projects that make a difference.</p>
+                <img src="your-photo.jpg" alt="Melvyn Montalvo" class="profile-picture">
+                <p>
+                    I'm Melvyn Montalvo, a seasoned Hotel General Manager with over 32 years of hands-on experience across all aspects of hotel operations.
+                    I specialize in leadership, customer service, and strategic decision-making, with a proven track record in boosting sales and enhancing guest loyalty.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
         <div class="container">
-            <h1 class="section-title">Projects</h1>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A brief description of your project. What did you build and why?</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A brief description of your project. What did you build and why?</p>
-                </div>
-                <!-- Add more project cards if needed -->
+            <h1 class="section-title">Work Experience</h1>
+
+            <div class="experience-item">
+                <h3>Hotel General Manager | FDCPR LLC dba The Tryst Beachfront Hotel</h3>
+                <p><strong>May 2018 – Present</strong></p>
+                <p>
+                    Oversee all hotel operations, ensuring adherence to service standards. Developed strategies to exceed revenue and guest satisfaction targets. 
+                    Achieved 2023 Tripadvisor Traveler's Choice Award for outstanding service and guest satisfaction.
+                </p>
             </div>
+
+            <div class="experience-item">
+                <h3>Hotel General Manager | ABH Management Corp. dba Atlantic Beach Hotel</h3>
+                <p><strong>March 2000 – April 2018</strong></p>
+                <p>
+                    Provided leadership to staff, developed budgets, spearheaded sales and marketing initiatives, and managed conflict resolution. Received 2005 Front Office Quality Award.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Operations Manager | Embassy Guest House</h3>
+                <p><strong>January 1994 – February 2000</strong></p>
+                <p>Implemented performance standards and managed daily operations with a focus on staff productivity.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Front Desk Manager | Embassy Guest House</h3>
+                <p><strong>July 1992 – December 1993</strong></p>
+                <p>Managed front desk operations, staff scheduling, and guest interactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h1 class="section-title">Education</h1>
+            <div class="education-item">
+                <h3>Electrical Engineering | Universidad Politécnica de Puerto Rico</h3>
+                <p><strong>August 1992 – June 1994</strong></p>
+            </div>
+            <div class="education-item">
+                <h3>Communications | Universidad del Sagrado Corazon</h3>
+                <p><strong>May 1990 – December 1990</strong></p>
+            </div>
+            <div class="education-item">
+                <h3>High School | Escuela de Idiomas Bilingüe Padre Rufo</h3>
+                <p><strong>August 1984 – May 1990</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h1 class="section-title">Skills</h1>
+            <ul class="skills-list">
+                <li>Hotel Management</li>
+                <li>Leadership</li>
+                <li>Customer Service</li>
+                <li>Strategic Decision Making</li>
+                <li>Problem Solving</li>
+                <li>QuickBooks</li>
+                <li>Microsoft Office Suite</li>
+                <li>Time Management</li>
+                <li>Conflict Resolution</li>
+                <li>Network & Computer Management</li>
+                <li>Electronics Technical Skills</li>
+            </ul>
         </div>
     </section>
 
@@ -53,10 +116,10 @@
     <section id="contact" class="section">
         <div class="container">
             <h1 class="section-title">Contact Me</h1>
-            <p>Feel free to reach out through any of the methods below:</p>
             <ul class="contact-info">
-                <li>Email: <a href="mailto:info@melvynonline.com">info@melvynonline.com</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/melvyn-montalvo-b55944210">Visit my Profile</a></li>
+                <li>Email: <a href="mailto:melvyn@melvynonline.com">melvyn@melvynonline.com</a></li>
+                <li>Phone: (787) 671-3570</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/melvyn-montalvo-b55944210">Melvyn Montalvo</a></li>
             </ul>
         </div>
     </section>
