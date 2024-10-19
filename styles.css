@@ -48,7 +48,7 @@ body {
     left: 0;
     width: 100%;
     padding: 1rem;
-    list-style-type: none;
+    list-style-type: none; /* This removes the dots next to the icons */
 }
 
 .nav-links.open {
@@ -85,28 +85,13 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Container for Each Section */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Spacing between section title and content */
-section h2 {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-/* Spacing between subheadings and content in each section */
-.experience h3, .education h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-/* Vertical space between content items within a section */
-.experience p, .experience ul, .education p {
-    margin-bottom: 20px;
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Responsive Styles */
