@@ -39,7 +39,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hide the navigation links by default */
 .nav-links {
     display: none;
     flex-direction: column;
@@ -49,6 +48,7 @@ body {
     left: 0;
     width: 100%;
     padding: 1rem;
+    list-style-type: none; /* This removes the dots next to the icons */
 }
 
 .nav-links.open {
