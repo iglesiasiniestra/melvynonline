@@ -86,22 +86,15 @@ body {
 }
 
 /* Container for Each Section */
-section {
-    padding: 2rem 0;
-    margin: 2rem 0;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.container {
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Spacing between section title and content */
 section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
