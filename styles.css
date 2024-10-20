@@ -53,7 +53,7 @@ ul li {
 /* Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: space-between;  /* Space hamburger and links apart */
+    justify-content: space-between;
     align-items: center;
     background-color: #333;
     padding: 15px;
@@ -106,14 +106,14 @@ ul li {
 }
 
 .portrait {
-    border-radius: 50%;        /* Keep the circular appearance */
-    width: 200px;              /* Set a fixed width */
-    height: 200px;             /* Set a fixed height */
+    border-radius: 50%;        /* Circular shape */
+    width: 200px;              /* Fixed width */
+    height: 200px;             /* Fixed height */
     object-fit: cover;         /* Ensure the image maintains aspect ratio */
     margin-bottom: 20px;
-    display: block;            /* Ensure proper block alignment */
-    margin-left: auto;         /* Center the image */
-    margin-right: auto;        /* Center the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer */
@@ -127,11 +127,11 @@ footer {
 /* Mobile View Styles */
 @media (max-width: 768px) {
     .hamburger {
-        display: flex;  /* Show hamburger menu on mobile */
+        display: flex;
     }
 
     .nav-links {
-        display: none;  /* Hide links on mobile */
+        display: none;
         flex-direction: column;
         background-color: #333;
         position: absolute;
@@ -142,20 +142,18 @@ footer {
     }
 
     .nav-links.active {
-        display: flex;  /* Show links when hamburger is clicked */
+        display: flex;
     }
 
     .nav-links li {
         margin: 10px 0;
     }
 
-    /* Adjust section padding and margins for mobile */
     section {
         padding: 30px 10px;
         margin-bottom: 30px;
     }
 
-    /* Resize section titles */
     section h2 {
         font-size: 1.8rem;
     }
@@ -169,52 +167,13 @@ footer {
         line-height: 1.6;
     }
 
-    /* Adjust hero section */
     .hero {
         padding: 30px 0;
     }
 
+    /* Adjust portrait for mobile */
     .portrait {
-        width: 150px;
+        width: 150px;  /* Smaller size for mobile */
         height: 150px;
-    }
-}
-
-/* Desktop Styles (Overrides) */
-@media (min-width: 769px) {
-    .hamburger {
-        display: none;  /* Hide hamburger on desktop */
-    }
-
-    .nav-links {
-        display: flex;  /* Show links in a row on desktop */
-    }
-
-    /* Ensure proper padding and spacing for desktop */
-    section {
-        padding: 50px 0;  /* Add sufficient padding */
-        margin-bottom: 50px;
-    }
-
-    .container {
-        padding: 20px;  /* Maintain consistent padding for sections */
-    }
-
-    section h2 {
-        font-size: 2rem;  /* Maintain larger title size */
-    }
-
-    p, ul {
-        font-size: 1.1rem;  /* Slightly larger font size for desktop */
-        line-height: 1.8;
-    }
-
-    .hero {
-        padding: 50px 0;  /* Add padding to hero section */
-    }
-
-    .portrait {
-        width: 200px;  /* Restore portrait size for desktop */
-        height: 200px;
     }
 }
