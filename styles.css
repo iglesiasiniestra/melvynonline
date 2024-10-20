@@ -106,14 +106,14 @@ ul li {
 }
 
 .portrait {
-    border-radius: 50%;          /* Make the image circular */
-    width: 200px;                /* Fixed width for the container */
-    height: 200px;               /* Fixed height for the container */
-    object-fit: cover;           /* Fill the container while maintaining the aspect ratio */
+    border-radius: 50%;          /* Ensures the image is circular */
+    width: 200px;                /* Explicit width for both mobile and desktop */
+    height: 200px;               /* Explicit height to keep it a perfect circle */
+    object-fit: cover;           /* Ensures the image maintains its aspect ratio while filling the circle */
     margin-bottom: 20px;
-    display: block;              /* Make the image behave as a block element */
-    margin-left: auto;           /* Center the image horizontally */
-    margin-right: auto;          /* Center the image horizontally */
+    display: block;              /* Ensures it's treated as a block element */
+    margin-left: auto;           /* Centers the image */
+    margin-right: auto;          /* Centers the image */
 }
 
 /* Footer */
