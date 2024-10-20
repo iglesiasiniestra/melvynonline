@@ -106,15 +106,14 @@ ul li {
 }
 
 .portrait {
-    border-radius: 50%;           /* Keep the circular shape */
-    width: 200px;                 /* Fixed width */
-    height: auto;                 /* Let height adjust automatically */
-    max-height: 200px;            /* Prevent height from exceeding 200px */
-    object-fit: contain;          /* Contain the image without stretching */
+    border-radius: 50%;        /* Keep the circular shape */
+    width: 200px;              /* Fixed width for the image */
+    height: 200px;             /* Fixed height for the image */
+    object-fit: cover;         /* Fill the container, maintaining the aspect ratio */
     margin-bottom: 20px;
-    display: block;               /* Ensure it's treated as a block element */
-    margin-left: auto;            /* Center the image */
-    margin-right: auto;           /* Center the image */
+    display: block;            /* Ensure it's treated as a block element */
+    margin-left: auto;         /* Center the image */
+    margin-right: auto;        /* Center the image */
 }
 
 /* Footer */
