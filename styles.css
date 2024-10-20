@@ -107,8 +107,8 @@ ul li {
 
 .portrait {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 200px;  /* Fixed width */
+    height: auto;  /* Height adjusts to maintain aspect ratio */
     margin-bottom: 20px;
 }
 
