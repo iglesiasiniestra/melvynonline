@@ -107,10 +107,14 @@ ul li {
 
 .portrait {
     border-radius: 50%;
-    width: 100%;         /* Allow the image to take full width of its container */
-    max-width: 200px;    /* Set a maximum width to avoid the image becoming too large */
-    height: auto;        /* Let the browser calculate the height automatically */
+    width: auto;         /* Let the width adjust naturally */
+    height: auto;        /* Keep the height auto to prevent distortion */
+    max-width: 200px;    /* Set a max width to control size */
+    max-height: 200px;   /* Set a max height to control size */
     margin-bottom: 20px;
+    display: block;      /* Ensure proper block alignment */
+    margin-left: auto;   /* Center the image horizontally */
+    margin-right: auto;  /* Center the image horizontally */
 }
 
 /* Footer */
