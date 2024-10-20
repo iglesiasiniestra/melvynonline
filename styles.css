@@ -8,10 +8,9 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    line-height: 1.6;  /* Increase line-height for readability */
+    line-height: 1.6;
 }
 
-/* Container for Section Content */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -26,7 +25,7 @@ section h2 {
     font-size: 2rem;
 }
 
-/* Section Layout */
+/* Section Styling */
 section {
     padding: 50px 0;
     margin-bottom: 50px;
@@ -35,13 +34,12 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Spacing for Paragraphs and Lists */
+/* Text and List Styling */
 p, ul {
     margin-bottom: 20px;
-    line-height: 1.8;  /* Increase line height for better readability */
+    line-height: 1.8;
 }
 
-/* List Styling */
 ul {
     padding-left: 20px;
     list-style-type: disc;
@@ -51,10 +49,10 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Navbar Styles */
+/* Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: space-between;  /* Align hamburger left and links centered */
+    justify-content: space-between;  /* Space hamburger and links apart */
     align-items: center;
     background-color: #333;
     padding: 15px;
@@ -75,4 +73,104 @@ ul li {
 
 .nav-links a {
     color: white;
-    text-decoration
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #f4b400;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #008cba;
+    color: white;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;  /* Show hamburger menu on mobile */
+    }
+
+    .nav-links {
+        display: none;  /* Hide links on mobile */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;  /* Show links when hamburger is clicked */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Adjust section padding and margins for mobile */
+    section {
+        padding: 30px 10px;
+        margin-bottom: 30px;
+    }
+
+    /* Resize section titles */
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    p, ul {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Adjust hero section */
+    .hero {
+        padding: 30px 0;
+    }
+
+    .portrait {
+        width: 150px;
+        height: 150px;
+    }
+}
