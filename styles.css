@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
 }
 
+/* Container for Section Content */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -83,7 +84,7 @@ ul li {
 
 /* Hamburger Menu */
 .hamburger {
-    display: none;
+    display: none;  /* Hidden on desktop, shown on mobile */
     flex-direction: column;
     cursor: pointer;
 }
@@ -172,5 +173,36 @@ footer {
     .portrait {
         width: 150px;
         height: 150px;
+    }
+}
+
+/* Desktop Styles (Overrides) */
+@media (min-width: 769px) {
+    /* Ensure larger padding and spacing for desktop */
+    section {
+        padding: 50px 0;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    p, ul {
+        font-size: 1.1rem;  /* Slightly larger font size on desktop */
+        line-height: 1.8;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .portrait {
+        width: 200px;
+        height: 200px;
     }
 }
