@@ -13,7 +13,7 @@ body {
 /* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: space-between;  /* Ensure the hamburger and nav links are separated */
+    justify-content: space-between;  /* Align hamburger left and links centered */
     align-items: center;
     background-color: #333;
     padding: 15px;
@@ -24,9 +24,8 @@ body {
 
 .nav-links {
     display: flex;
-    justify-content: center;  /* Ensure nav links are centered */
+    justify-content: center;
     list-style: none;
-    flex: 1;  /* Take available space */
 }
 
 .nav-links li {
@@ -45,7 +44,7 @@ body {
 
 /* Hamburger Menu */
 .hamburger {
-    display: none;  /* Hidden by default, shown on mobile */
+    display: none;  /* Hidden on desktop, shown on mobile */
     flex-direction: column;
     cursor: pointer;
 }
@@ -65,7 +64,7 @@ body {
     }
 
     .nav-links {
-        display: none;  /* Hide links initially on mobile */
+        display: none;  /* Hide links on mobile initially */
         flex-direction: column;
         background-color: #333;
         position: absolute;
@@ -82,4 +81,27 @@ body {
     .nav-links li {
         margin: 10px 0;
     }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #008cba;
+    color: white;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
