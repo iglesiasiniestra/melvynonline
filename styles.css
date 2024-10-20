@@ -53,7 +53,8 @@ ul li {
 /* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: center;  /* Center the entire navbar */
+    justify-content: center;  /* Center only the navbar content */
+    align-items: center;
     background-color: #333;
     padding: 15px;
     position: sticky;
@@ -63,7 +64,7 @@ ul li {
 
 .nav-links {
     display: flex;
-    justify-content: center;  /* Ensure links are also centered */
+    justify-content: center;  /* Ensure links are centered within the navbar */
     list-style: none;
 }
 
@@ -90,11 +91,11 @@ ul li {
 }
 
 .portrait {
-    /* Original profile picture styles maintained */
     border-radius: 50%;
     width: 200px;
     height: 200px;
     margin-bottom: 20px;
+    /* No additional centering changes needed */
 }
 
 /* Footer Section */
