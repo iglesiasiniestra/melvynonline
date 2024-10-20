@@ -103,7 +103,7 @@ section {
 
 /* About Section specific styles */
 .about-section {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
 }
 
