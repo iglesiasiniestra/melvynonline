@@ -53,16 +53,12 @@ ul li {
 /* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the navbar content */
     background-color: #333;
     padding: 15px;
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.hamburger {
-    cursor: pointer;
 }
 
 .nav-links {
