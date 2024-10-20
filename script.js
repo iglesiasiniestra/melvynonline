@@ -1,6 +1,6 @@
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    navLinks.classList.toggle('active');  // Toggles the visibility of the nav-links
 });
