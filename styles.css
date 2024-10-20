@@ -107,8 +107,9 @@ ul li {
 
 .portrait {
     border-radius: 50%;
-    width: 200px;  /* Fixed width */
-    height: auto;  /* Height adjusts to maintain aspect ratio */
+    width: 100%;         /* Allow the image to take full width of its container */
+    max-width: 200px;    /* Set a maximum width to avoid the image becoming too large */
+    height: auto;        /* Let the browser calculate the height automatically */
     margin-bottom: 20px;
 }
 
