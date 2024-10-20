@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
 }
 
+/* Container for Section Content */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -93,4 +94,123 @@ ul li {
     height: 3px;
     background-color: white;
     margin: 4px;
-    transition: all 0.3s
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #008cba;
+    color: white;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;  /* Show hamburger menu on mobile */
+    }
+
+    .nav-links {
+        display: none;  /* Hide links on mobile */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;  /* Show links when hamburger is clicked */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Adjust section padding and margins for mobile */
+    section {
+        padding: 30px 10px;
+        margin-bottom: 30px;
+    }
+
+    /* Resize section titles */
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    p, ul {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Adjust hero section */
+    .hero {
+        padding: 30px 0;
+    }
+
+    .portrait {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Desktop Styles (Overrides) */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;  /* Hide hamburger on desktop */
+    }
+
+    .nav-links {
+        display: flex;  /* Show links in a row on desktop */
+    }
+
+    /* Ensure proper padding and spacing for desktop */
+    section {
+        padding: 50px 0;  /* Add sufficient padding */
+        margin-bottom: 50px;
+    }
+
+    .container {
+        padding: 20px;  /* Maintain consistent padding for sections */
+    }
+
+    section h2 {
+        font-size: 2rem;  /* Maintain larger title size */
+    }
+
+    p, ul {
+        font-size: 1.1rem;  /* Slightly larger font size for desktop */
+        line-height: 1.8;
+    }
+
+    .hero {
+        padding: 50px 0;  /* Add padding to hero section */
+    }
+
+    .portrait {
+        width: 200px;  /* Restore portrait size for desktop */
+        height: 200px;
+    }
+}
